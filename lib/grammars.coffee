@@ -168,7 +168,7 @@ module.exports =
     'File Based':
       command: 'coffee'
       args: (context) -> [context.filepath]
-      
+
   "Common Lisp":
     "File Based":
       command: "clisp"
@@ -477,10 +477,10 @@ module.exports =
 
   MagicPython:
     "Selection Based":
-      command: "python"
+      command: "python3"
       args: (context)  -> ['-u', '-c', context.getCode()]
     "File Based":
-      command: "python"
+      command: "python3"
       args: (context) -> ['-u', context.filepath]
 
   MATLAB:
@@ -669,10 +669,10 @@ module.exports =
 
   Python:
     "Selection Based":
-      command: "python"
+      command: "python3"
       args: (context)  -> ['-u', '-c', context.getCode()]
     "File Based":
-      command: "python"
+      command: "python3"
       args: (context) -> ['-u', context.filepath]
 
   R:
